@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E6F3954013B989B100DF98A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F3953F13B989B100DF98A9 /* UIKit.framework */; };
+		E6F3954213B989B100DF98A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F3954113B989B100DF98A9 /* Foundation.framework */; };
+		E6F3954413B989B100DF98A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F3954313B989B100DF98A9 /* CoreGraphics.framework */; };
+		E6F3954A13B989B100DF98A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6F3954813B989B100DF98A9 /* InfoPlist.strings */; };
+		E6F3954D13B989B100DF98A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F3954C13B989B100DF98A9 /* main.m */; };
+		E6F3955013B989B100DF98A9 /* TweetBotTabBarAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F3954F13B989B100DF98A9 /* TweetBotTabBarAppDelegate.m */; };
+		E6F3955313B989B100DF98A9 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6F3955113B989B100DF98A9 /* MainWindow.xib */; };
+		E6F3955613B989B100DF98A9 /* TweetBotTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F3955513B989B100DF98A9 /* TweetBotTabBarViewController.m */; };
+		E6F3955913B989B100DF98A9 /* TweetBotTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6F3955713B989B100DF98A9 /* TweetBotTabBarViewController.xib */; };
+		E6F3957413B98A6900DF98A9 /* TBTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F3957313B98A6900DF98A9 /* TBTabBar.m */; };
+		E6F3957713B98DAB00DF98A9 /* TBTabButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F3957613B98DAB00DF98A9 /* TBTabButton.m */; };
+		E6F395AB13B9965C00DF98A9 /* tabBarNotificationLightOn.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3957913B9965C00DF98A9 /* tabBarNotificationLightOn.png */; };
+		E6F395AC13B9965C00DF98A9 /* tabBarNotificationLightOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3957A13B9965C00DF98A9 /* tabBarNotificationLightOn@2x.png */; };
+		E6F395AD13B9965C00DF98A9 /* tabBarNotificationLightOff.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3957B13B9965C00DF98A9 /* tabBarNotificationLightOff.png */; };
+		E6F395AE13B9965C00DF98A9 /* tabBarNotificationLightOff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3957C13B9965C00DF98A9 /* tabBarNotificationLightOff@2x.png */; };
+		E6F395CB13B9965D00DF98A9 /* tabBarButtonBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3959913B9965C00DF98A9 /* tabBarButtonBackground.png */; };
+		E6F395CC13B9965D00DF98A9 /* tabBarButtonBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3959A13B9965C00DF98A9 /* tabBarButtonBackground@2x.png */; };
+		E6F395E713B9C28900DF98A9 /* TBTabNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F395E613B9C28900DF98A9 /* TBTabNotification.m */; };
+		E6F395EA13B9C93D00DF98A9 /* TBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F395E913B9C93D00DF98A9 /* TBViewController.m */; };
+		E6F395EE13B9CC0B00DF98A9 /* TweetBotTabBarTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F395EC13B9CC0B00DF98A9 /* TweetBotTabBarTestViewController.m */; };
+		E6F395EF13B9CC0B00DF98A9 /* TweetBotTabBarTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6F395ED13B9CC0B00DF98A9 /* TweetBotTabBarTestViewController.xib */; };
+		E6F395F113B9D37F00DF98A9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E6F395F013B9D37F00DF98A9 /* README.md */; };
+		E6F3960A13BA31BE00DF98A9 /* searchIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3960213BA31BC00DF98A9 /* searchIcon.png */; };
+		E6F3960B13BA31BE00DF98A9 /* searchIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3960313BA31BC00DF98A9 /* searchIcon@2x.png */; };
+		E6F3960C13BA31BE00DF98A9 /* searchIconHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3960413BA31BD00DF98A9 /* searchIconHighlighted.png */; };
+		E6F3960D13BA31BE00DF98A9 /* searchIconHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3960513BA31BD00DF98A9 /* searchIconHighlighted@2x.png */; };
+		E6F3960E13BA31BE00DF98A9 /* timelineIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3960613BA31BD00DF98A9 /* timelineIcon.png */; };
+		E6F3960F13BA31BE00DF98A9 /* timelineIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3960713BA31BD00DF98A9 /* timelineIcon@2x.png */; };
+		E6F3961013BA31BE00DF98A9 /* timelineIconHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3960813BA31BD00DF98A9 /* timelineIconHighlighted.png */; };
+		E6F3961113BA31BE00DF98A9 /* timelineIconHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3960913BA31BD00DF98A9 /* timelineIconHighlighted@2x.png */; };
+		E6F3961613BA337F00DF98A9 /* messagesIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3961213BA337E00DF98A9 /* messagesIcon.png */; };
+		E6F3961713BA337F00DF98A9 /* messagesIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3961313BA337E00DF98A9 /* messagesIcon@2x.png */; };
+		E6F3961813BA337F00DF98A9 /* messagesIconHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3961413BA337E00DF98A9 /* messagesIconHighlighted.png */; };
+		E6F3961913BA337F00DF98A9 /* messagesIconHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3961513BA337F00DF98A9 /* messagesIconHighlighted@2x.png */; };
+		E6F3961E13BA346D00DF98A9 /* favoritesIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3961A13BA346C00DF98A9 /* favoritesIcon.png */; };
+		E6F3961F13BA346D00DF98A9 /* favoritesIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3961B13BA346C00DF98A9 /* favoritesIcon@2x.png */; };
+		E6F3962013BA346D00DF98A9 /* favoritesIconHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3961C13BA346D00DF98A9 /* favoritesIconHighlighted.png */; };
+		E6F3962113BA346D00DF98A9 /* favoritesIconHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3961D13BA346D00DF98A9 /* favoritesIconHighlighted@2x.png */; };
+		E6F3962613BA366B00DF98A9 /* mentionsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3962213BA366A00DF98A9 /* mentionsIcon.png */; };
+		E6F3962713BA366B00DF98A9 /* mentionsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3962313BA366A00DF98A9 /* mentionsIcon@2x.png */; };
+		E6F3962813BA366B00DF98A9 /* mentionsIconHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3962413BA366B00DF98A9 /* mentionsIconHighlighted.png */; };
+		E6F3962913BA366B00DF98A9 /* mentionsIconHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F3962513BA366B00DF98A9 /* mentionsIconHighlighted@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E6F3953B13B989B100DF98A9 /* TweetBotTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetBotTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6F3953F13B989B100DF98A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E6F3954113B989B100DF98A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E6F3954313B989B100DF98A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E6F3954713B989B100DF98A9 /* TweetBotTabBar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TweetBotTabBar-Info.plist"; sourceTree = "<group>"; };
+		E6F3954913B989B100DF98A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E6F3954B13B989B100DF98A9 /* TweetBotTabBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TweetBotTabBar-Prefix.pch"; sourceTree = "<group>"; };
+		E6F3954C13B989B100DF98A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E6F3954E13B989B100DF98A9 /* TweetBotTabBarAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TweetBotTabBarAppDelegate.h; sourceTree = "<group>"; };
+		E6F3954F13B989B100DF98A9 /* TweetBotTabBarAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweetBotTabBarAppDelegate.m; sourceTree = "<group>"; };
+		E6F3955213B989B100DF98A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		E6F3955413B989B100DF98A9 /* TweetBotTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TweetBotTabBarViewController.h; sourceTree = "<group>"; };
+		E6F3955513B989B100DF98A9 /* TweetBotTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweetBotTabBarViewController.m; sourceTree = "<group>"; };
+		E6F3955813B989B100DF98A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TweetBotTabBarViewController.xib; sourceTree = "<group>"; };
+		E6F3957213B98A6900DF98A9 /* TBTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBTabBar.h; path = ../TBTabBar.h; sourceTree = "<group>"; };
+		E6F3957313B98A6900DF98A9 /* TBTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBTabBar.m; path = ../TBTabBar.m; sourceTree = "<group>"; };
+		E6F3957513B98DAB00DF98A9 /* TBTabButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBTabButton.h; sourceTree = "<group>"; };
+		E6F3957613B98DAB00DF98A9 /* TBTabButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBTabButton.m; sourceTree = "<group>"; };
+		E6F3957913B9965C00DF98A9 /* tabBarNotificationLightOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBarNotificationLightOn.png; sourceTree = "<group>"; };
+		E6F3957A13B9965C00DF98A9 /* tabBarNotificationLightOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBarNotificationLightOn@2x.png"; sourceTree = "<group>"; };
+		E6F3957B13B9965C00DF98A9 /* tabBarNotificationLightOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBarNotificationLightOff.png; sourceTree = "<group>"; };
+		E6F3957C13B9965C00DF98A9 /* tabBarNotificationLightOff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBarNotificationLightOff@2x.png"; sourceTree = "<group>"; };
+		E6F3959913B9965C00DF98A9 /* tabBarButtonBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBarButtonBackground.png; sourceTree = "<group>"; };
+		E6F3959A13B9965C00DF98A9 /* tabBarButtonBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBarButtonBackground@2x.png"; sourceTree = "<group>"; };
+		E6F395E513B9C28800DF98A9 /* TBTabNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBTabNotification.h; sourceTree = "<group>"; };
+		E6F395E613B9C28900DF98A9 /* TBTabNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBTabNotification.m; sourceTree = "<group>"; };
+		E6F395E813B9C93D00DF98A9 /* TBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBViewController.h; sourceTree = "<group>"; };
+		E6F395E913B9C93D00DF98A9 /* TBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBViewController.m; sourceTree = "<group>"; };
+		E6F395EB13B9CC0B00DF98A9 /* TweetBotTabBarTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetBotTabBarTestViewController.h; sourceTree = "<group>"; };
+		E6F395EC13B9CC0B00DF98A9 /* TweetBotTabBarTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetBotTabBarTestViewController.m; sourceTree = "<group>"; };
+		E6F395ED13B9CC0B00DF98A9 /* TweetBotTabBarTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetBotTabBarTestViewController.xib; sourceTree = "<group>"; };
+		E6F395F013B9D37F00DF98A9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
+		E6F3960213BA31BC00DF98A9 /* searchIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchIcon.png; sourceTree = "<group>"; };
+		E6F3960313BA31BC00DF98A9 /* searchIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "searchIcon@2x.png"; sourceTree = "<group>"; };
+		E6F3960413BA31BD00DF98A9 /* searchIconHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchIconHighlighted.png; sourceTree = "<group>"; };
+		E6F3960513BA31BD00DF98A9 /* searchIconHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "searchIconHighlighted@2x.png"; sourceTree = "<group>"; };
+		E6F3960613BA31BD00DF98A9 /* timelineIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timelineIcon.png; sourceTree = "<group>"; };
+		E6F3960713BA31BD00DF98A9 /* timelineIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "timelineIcon@2x.png"; sourceTree = "<group>"; };
+		E6F3960813BA31BD00DF98A9 /* timelineIconHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timelineIconHighlighted.png; sourceTree = "<group>"; };
+		E6F3960913BA31BD00DF98A9 /* timelineIconHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "timelineIconHighlighted@2x.png"; sourceTree = "<group>"; };
+		E6F3961213BA337E00DF98A9 /* messagesIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messagesIcon.png; sourceTree = "<group>"; };
+		E6F3961313BA337E00DF98A9 /* messagesIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messagesIcon@2x.png"; sourceTree = "<group>"; };
+		E6F3961413BA337E00DF98A9 /* messagesIconHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messagesIconHighlighted.png; sourceTree = "<group>"; };
+		E6F3961513BA337F00DF98A9 /* messagesIconHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messagesIconHighlighted@2x.png"; sourceTree = "<group>"; };
+		E6F3961A13BA346C00DF98A9 /* favoritesIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favoritesIcon.png; sourceTree = "<group>"; };
+		E6F3961B13BA346C00DF98A9 /* favoritesIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favoritesIcon@2x.png"; sourceTree = "<group>"; };
+		E6F3961C13BA346D00DF98A9 /* favoritesIconHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favoritesIconHighlighted.png; sourceTree = "<group>"; };
+		E6F3961D13BA346D00DF98A9 /* favoritesIconHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favoritesIconHighlighted@2x.png"; sourceTree = "<group>"; };
+		E6F3962213BA366A00DF98A9 /* mentionsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mentionsIcon.png; sourceTree = "<group>"; };
+		E6F3962313BA366A00DF98A9 /* mentionsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mentionsIcon@2x.png"; sourceTree = "<group>"; };
+		E6F3962413BA366B00DF98A9 /* mentionsIconHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mentionsIconHighlighted.png; sourceTree = "<group>"; };
+		E6F3962513BA366B00DF98A9 /* mentionsIconHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mentionsIconHighlighted@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6F3953813B989B100DF98A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6F3954013B989B100DF98A9 /* UIKit.framework in Frameworks */,
+				E6F3954213B989B100DF98A9 /* Foundation.framework in Frameworks */,
+				E6F3954413B989B100DF98A9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E6F3953013B989B100DF98A9 = {
+			isa = PBXGroup;
+			children = (
+				E6F3954513B989B100DF98A9 /* TweetBotTabBar */,
+				E6F3957813B9963B00DF98A9 /* Resources */,
+				E6F3953E13B989B100DF98A9 /* Frameworks */,
+				E6F3953C13B989B100DF98A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E6F3953C13B989B100DF98A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6F3953B13B989B100DF98A9 /* TweetBotTabBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6F3953E13B989B100DF98A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6F3953F13B989B100DF98A9 /* UIKit.framework */,
+				E6F3954113B989B100DF98A9 /* Foundation.framework */,
+				E6F3954313B989B100DF98A9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6F3954513B989B100DF98A9 /* TweetBotTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E6F3954E13B989B100DF98A9 /* TweetBotTabBarAppDelegate.h */,
+				E6F3954F13B989B100DF98A9 /* TweetBotTabBarAppDelegate.m */,
+				E6F3955113B989B100DF98A9 /* MainWindow.xib */,
+				E6F3955413B989B100DF98A9 /* TweetBotTabBarViewController.h */,
+				E6F3955513B989B100DF98A9 /* TweetBotTabBarViewController.m */,
+				E6F3955713B989B100DF98A9 /* TweetBotTabBarViewController.xib */,
+				E6F3957213B98A6900DF98A9 /* TBTabBar.h */,
+				E6F3957313B98A6900DF98A9 /* TBTabBar.m */,
+				E6F3957513B98DAB00DF98A9 /* TBTabButton.h */,
+				E6F3957613B98DAB00DF98A9 /* TBTabButton.m */,
+				E6F395E513B9C28800DF98A9 /* TBTabNotification.h */,
+				E6F395E613B9C28900DF98A9 /* TBTabNotification.m */,
+				E6F395E813B9C93D00DF98A9 /* TBViewController.h */,
+				E6F395E913B9C93D00DF98A9 /* TBViewController.m */,
+				E6F395EB13B9CC0B00DF98A9 /* TweetBotTabBarTestViewController.h */,
+				E6F395EC13B9CC0B00DF98A9 /* TweetBotTabBarTestViewController.m */,
+				E6F395ED13B9CC0B00DF98A9 /* TweetBotTabBarTestViewController.xib */,
+				E6F3954613B989B100DF98A9 /* Supporting Files */,
+			);
+			path = TweetBotTabBar;
+			sourceTree = "<group>";
+		};
+		E6F3954613B989B100DF98A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6F3954713B989B100DF98A9 /* TweetBotTabBar-Info.plist */,
+				E6F395F013B9D37F00DF98A9 /* README.md */,
+				E6F3954813B989B100DF98A9 /* InfoPlist.strings */,
+				E6F3954B13B989B100DF98A9 /* TweetBotTabBar-Prefix.pch */,
+				E6F3954C13B989B100DF98A9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E6F3957813B9963B00DF98A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E6F3962213BA366A00DF98A9 /* mentionsIcon.png */,
+				E6F3962313BA366A00DF98A9 /* mentionsIcon@2x.png */,
+				E6F3962413BA366B00DF98A9 /* mentionsIconHighlighted.png */,
+				E6F3962513BA366B00DF98A9 /* mentionsIconHighlighted@2x.png */,
+				E6F3961A13BA346C00DF98A9 /* favoritesIcon.png */,
+				E6F3961B13BA346C00DF98A9 /* favoritesIcon@2x.png */,
+				E6F3961C13BA346D00DF98A9 /* favoritesIconHighlighted.png */,
+				E6F3961D13BA346D00DF98A9 /* favoritesIconHighlighted@2x.png */,
+				E6F3961213BA337E00DF98A9 /* messagesIcon.png */,
+				E6F3961313BA337E00DF98A9 /* messagesIcon@2x.png */,
+				E6F3961413BA337E00DF98A9 /* messagesIconHighlighted.png */,
+				E6F3961513BA337F00DF98A9 /* messagesIconHighlighted@2x.png */,
+				E6F3960213BA31BC00DF98A9 /* searchIcon.png */,
+				E6F3960313BA31BC00DF98A9 /* searchIcon@2x.png */,
+				E6F3960413BA31BD00DF98A9 /* searchIconHighlighted.png */,
+				E6F3960513BA31BD00DF98A9 /* searchIconHighlighted@2x.png */,
+				E6F3960613BA31BD00DF98A9 /* timelineIcon.png */,
+				E6F3960713BA31BD00DF98A9 /* timelineIcon@2x.png */,
+				E6F3960813BA31BD00DF98A9 /* timelineIconHighlighted.png */,
+				E6F3960913BA31BD00DF98A9 /* timelineIconHighlighted@2x.png */,
+				E6F3957913B9965C00DF98A9 /* tabBarNotificationLightOn.png */,
+				E6F3957A13B9965C00DF98A9 /* tabBarNotificationLightOn@2x.png */,
+				E6F3957B13B9965C00DF98A9 /* tabBarNotificationLightOff.png */,
+				E6F3957C13B9965C00DF98A9 /* tabBarNotificationLightOff@2x.png */,
+				E6F3959913B9965C00DF98A9 /* tabBarButtonBackground.png */,
+				E6F3959A13B9965C00DF98A9 /* tabBarButtonBackground@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6F3953A13B989B100DF98A9 /* TweetBotTabBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6F3955C13B989B100DF98A9 /* Build configuration list for PBXNativeTarget "TweetBotTabBar" */;
+			buildPhases = (
+				E6F3953713B989B100DF98A9 /* Sources */,
+				E6F3953813B989B100DF98A9 /* Frameworks */,
+				E6F3953913B989B100DF98A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TweetBotTabBar;
+			productName = TweetBotTabBar;
+			productReference = E6F3953B13B989B100DF98A9 /* TweetBotTabBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6F3953213B989B100DF98A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = i3Software;
+			};
+			buildConfigurationList = E6F3953513B989B100DF98A9 /* Build configuration list for PBXProject "TweetBotTabBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E6F3953013B989B100DF98A9;
+			productRefGroup = E6F3953C13B989B100DF98A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6F3953A13B989B100DF98A9 /* TweetBotTabBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6F3953913B989B100DF98A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6F3954A13B989B100DF98A9 /* InfoPlist.strings in Resources */,
+				E6F3955313B989B100DF98A9 /* MainWindow.xib in Resources */,
+				E6F3955913B989B100DF98A9 /* TweetBotTabBarViewController.xib in Resources */,
+				E6F395AB13B9965C00DF98A9 /* tabBarNotificationLightOn.png in Resources */,
+				E6F395AC13B9965C00DF98A9 /* tabBarNotificationLightOn@2x.png in Resources */,
+				E6F395AD13B9965C00DF98A9 /* tabBarNotificationLightOff.png in Resources */,
+				E6F395AE13B9965C00DF98A9 /* tabBarNotificationLightOff@2x.png in Resources */,
+				E6F395CB13B9965D00DF98A9 /* tabBarButtonBackground.png in Resources */,
+				E6F395CC13B9965D00DF98A9 /* tabBarButtonBackground@2x.png in Resources */,
+				E6F395EF13B9CC0B00DF98A9 /* TweetBotTabBarTestViewController.xib in Resources */,
+				E6F395F113B9D37F00DF98A9 /* README.md in Resources */,
+				E6F3960A13BA31BE00DF98A9 /* searchIcon.png in Resources */,
+				E6F3960B13BA31BE00DF98A9 /* searchIcon@2x.png in Resources */,
+				E6F3960C13BA31BE00DF98A9 /* searchIconHighlighted.png in Resources */,
+				E6F3960D13BA31BE00DF98A9 /* searchIconHighlighted@2x.png in Resources */,
+				E6F3960E13BA31BE00DF98A9 /* timelineIcon.png in Resources */,
+				E6F3960F13BA31BE00DF98A9 /* timelineIcon@2x.png in Resources */,
+				E6F3961013BA31BE00DF98A9 /* timelineIconHighlighted.png in Resources */,
+				E6F3961113BA31BE00DF98A9 /* timelineIconHighlighted@2x.png in Resources */,
+				E6F3961613BA337F00DF98A9 /* messagesIcon.png in Resources */,
+				E6F3961713BA337F00DF98A9 /* messagesIcon@2x.png in Resources */,
+				E6F3961813BA337F00DF98A9 /* messagesIconHighlighted.png in Resources */,
+				E6F3961913BA337F00DF98A9 /* messagesIconHighlighted@2x.png in Resources */,
+				E6F3961E13BA346D00DF98A9 /* favoritesIcon.png in Resources */,
+				E6F3961F13BA346D00DF98A9 /* favoritesIcon@2x.png in Resources */,
+				E6F3962013BA346D00DF98A9 /* favoritesIconHighlighted.png in Resources */,
+				E6F3962113BA346D00DF98A9 /* favoritesIconHighlighted@2x.png in Resources */,
+				E6F3962613BA366B00DF98A9 /* mentionsIcon.png in Resources */,
+				E6F3962713BA366B00DF98A9 /* mentionsIcon@2x.png in Resources */,
+				E6F3962813BA366B00DF98A9 /* mentionsIconHighlighted.png in Resources */,
+				E6F3962913BA366B00DF98A9 /* mentionsIconHighlighted@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6F3953713B989B100DF98A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6F3954D13B989B100DF98A9 /* main.m in Sources */,
+				E6F3955013B989B100DF98A9 /* TweetBotTabBarAppDelegate.m in Sources */,
+				E6F3955613B989B100DF98A9 /* TweetBotTabBarViewController.m in Sources */,
+				E6F3957413B98A6900DF98A9 /* TBTabBar.m in Sources */,
+				E6F3957713B98DAB00DF98A9 /* TBTabButton.m in Sources */,
+				E6F395E713B9C28900DF98A9 /* TBTabNotification.m in Sources */,
+				E6F395EA13B9C93D00DF98A9 /* TBViewController.m in Sources */,
+				E6F395EE13B9CC0B00DF98A9 /* TweetBotTabBarTestViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E6F3954813B989B100DF98A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6F3954913B989B100DF98A9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E6F3955113B989B100DF98A9 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6F3955213B989B100DF98A9 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		E6F3955713B989B100DF98A9 /* TweetBotTabBarViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6F3955813B989B100DF98A9 /* en */,
+			);
+			name = TweetBotTabBarViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6F3955A13B989B100DF98A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E6F3955B13B989B100DF98A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		E6F3955D13B989B100DF98A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TweetBotTabBar/TweetBotTabBar-Prefix.pch";
+				INFOPLIST_FILE = "TweetBotTabBar/TweetBotTabBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E6F3955E13B989B100DF98A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TweetBotTabBar/TweetBotTabBar-Prefix.pch";
+				INFOPLIST_FILE = "TweetBotTabBar/TweetBotTabBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6F3953513B989B100DF98A9 /* Build configuration list for PBXProject "TweetBotTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6F3955A13B989B100DF98A9 /* Debug */,
+				E6F3955B13B989B100DF98A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6F3955C13B989B100DF98A9 /* Build configuration list for PBXNativeTarget "TweetBotTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6F3955D13B989B100DF98A9 /* Debug */,
+				E6F3955E13B989B100DF98A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6F3953213B989B100DF98A9 /* Project object */;
+}
